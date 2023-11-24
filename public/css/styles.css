@@ -1,0 +1,518 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: yellow;
+  margin-bottom: -16px;
+
+}
+
+body {
+  font-family: "Roboto"; /* tipografia */
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+
+footer {
+  font-family: "Roboto";
+}
+
+.titulares {
+  font-size: 24px;
+}
+
+.texto {
+  font-size: 12px;
+}
+.precio {
+  font-size: 18px;
+}
+
+.descuento {
+  font-size: 16px;
+  color: green;
+}
+
+.descripcion {
+  font-size: 16px;
+  display: none; /* ocultar */
+}
+
+
+/* ----MENU HAMBURGUESA ------*/
+
+.menu {
+  /* burguer: comportamiento en la caja */
+  align-items: center;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.material-symbols-outlined {
+  /* burguer: orientado en la imagen */
+  color: white;
+  align-items: center;
+  background-color: #1259c3;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+/*----- IMAGENES----- */ 
+
+.imagenes {
+  width: auto;
+  height: auto;
+}
+
+.imagenes img {
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  margin-bottom: 0%;
+  margin: auto;
+}
+
+/*-- CAMION VERDE---- */
+
+.camion {                       /* camion: aplico propiedades al elemento que guarda el icono */
+  display:flex;  
+  justify-content: flex-end;            
+  color: green;
+  border-bottom: 1px solid green;
+  
+} 
+
+
+.fa-truck{                 /*camion: le aplico el borde al icono con la 3ra parte del nombre */
+  border-radius: 50%;
+  border:1px solid;
+  padding:5px;
+}
+
+
+
+/* ----CAMBIA ICONOS DEL FOOTER DE COLOR AL PASAR MOUSE------*/
+.tarjeta{
+  font-size: 2em;
+  color: #0000ff;
+  margin-bottom: 2px;
+  text-align: center;
+  transition: color 450ms;
+}
+.footer-icono1:hover .tarjeta{
+  color:#99a7dd;
+}
+
+.regalo {
+  font-size: 2em; /* Tamaño del icono */
+ color: blue; /* Color del icono */
+  margin-bottom: 2px; /* Margen inferior  */
+  text-align: center;
+}
+.footer-icono2:hover .regalo{
+  color:#99a7dd;
+}
+
+.seguridad {
+  font-size: 2em;
+  color: blue;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.footer-icono3:hover .seguridad{
+  color:#99a7dd;
+}
+
+
+.texto-footer {
+  font-family: "Roboto";
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+}
+
+.titular-footer {
+  font-family: "Roboto";
+  font-size: 24px;
+  text-align: center;
+  align-items: center;
+}
+
+/*--------- ARTICULOS --------*/
+.articulo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80%;
+}
+
+.caja {
+  border-top: 1px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: #ebebeb;
+  padding: 15px;
+
+}
+
+.articulo .precio-descuento {
+  /* precio descuento mismo renglon  */
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.precio-descuento{
+  display:flex;
+  align-items: first baseline;
+}
+.precio {
+  width: 30%;
+}
+
+.descuento {
+  width: 70%;
+}
+
+.buscador {
+  
+  display:none;
+}
+
+/* HEADER */
+
+.logo {
+  /* logo mercado liebre */
+  width: 50%; 
+  margin-left: 30px;
+  flex-wrap: wrap;
+  animation:aumentar-logo 1s linear 3 alternate ;
+  
+}
+ @keyframes aumentar-logo {
+ 0% {
+  transform:scale(1);
+ }
+ 100%{
+  transform: scale(1.2);    /* crece un 120% de su tamaño normal */
+ }
+  
+ }
+
+.barra-busqueda{
+  width:30%;
+/*   flex-wrap: wrap;
+ */  margin-top: 10px;
+  
+}
+.fa-magnifying-glass{
+  width:10px;
+  background-color: #ebebeb;
+  height:auto;
+  margin-top:10px;
+
+}
+
+.copy-header {
+  
+  font-weight:normal; /* le saque la negrita al compra en cuotas y sin tarjeta... */
+  font-size: 20px;
+  padding: 1px;
+  text-align: center;
+
+  
+}
+
+
+.main-navbar {
+  display: none;
+}
+
+.main-navbar ul{
+  list-style: none;
+  margin: 0 10px;
+  padding:0;
+}
+
+.main-navbar a{
+  text-decoration: none;
+  color: #222;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+}
+
+ 
+/* FORMULARIOS */ /* REGISTER Y LOGIN */
+.formulario{
+  margin-bottom:15px;
+}
+
+.formulario label{
+  display:flex;
+  margin-bottom: 5px;
+  margin-left:30px;
+  font-style: 'roboto'; 
+  display:block;
+}
+ .formulario input{
+  padding: 8px;
+  margin-left:4px
+ }
+ .formulario p{
+  margin-left:30px ;
+ }
+
+ .button-enviar:hover .button-login{
+  background-color:#0022AA;
+ }
+
+.button-login{
+  width:200px;
+  background-color:darkgray;
+  transition:background-color 450ms;
+  color:#ebebeb;
+  margin-bottom: 20px;
+}
+  .formulario .button{
+    display:inline-block;
+    border:none;
+    border-radius:10px;
+    font-size: 20px;
+    background-color: white;
+    margin-left: 20px;
+   }
+
+
+main.loguear {
+  background-color:#ebebeb;
+  width: 100%;
+ }
+main.registro{
+  background-color: rgb(212, 235, 227);
+  width:100%;
+  margin-top: -4px;
+ }
+
+ .comentario textarea{
+  margin-left:25px;
+  display:block;
+ }
+
+ .comentario label{
+  margin-left:20px;
+ }
+
+
+
+/* --------------tablet-------------------- */
+
+@media (min-width: 381px) {
+
+
+  .logo{
+    width: 30%;
+  }
+  .barra-busqueda{
+    width: 80%;
+  }
+
+  .copy-header{
+    width: 30%;
+  }
+  .listado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .articulo {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  .descripcion {
+    display: block; /* mostar  */
+  }
+  .caja {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .menu {
+    display: none;
+  }
+  .main-navbar{
+    display:flex;
+    justify-content: space-between;
+    margin:auto;
+    margin-top:50px;
+    margin-bottom: 10px;
+
+  }
+
+.right-navbar{
+  margin-right: 10px;
+}
+
+.main-navbar li{
+  margin:0 5px;
+} 
+.precio-descuento{
+  display:flex;
+  align-items: first baseline;
+}
+
+.main-header-top-bar {                 /* logo,buscador,compra en cuotas... */
+  display:flex; 
+  justify-content: space-between;
+  margin:auto;
+  border-color: darkblue;
+}
+ .main-header-top-bar .buscador {
+  display:flex;
+  height: 30px;
+  align-self:center;
+  justify-content: center;
+  margin-left:50px;
+} 
+  }
+    
+  
+
+
+
+
+/*----------------- compu------------------- */
+
+@media (min-width: 769px) {
+
+  .logo{
+    width:30%;
+  }
+
+  .main-header-top-bar {                 /* logo,buscador,compra en cuotas... */
+    display:flex; 
+    justify-content: space-between;
+    margin:auto;
+    border-color: darkblue;
+  }
+
+.main-navbar{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:10px;
+      /* margin:auto;
+      margin-top:50px; */
+  
+    }
+    .main-navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+    
+   
+   .copy-header{
+   max-width: none;
+   text-align: right;
+   margin-right: 10px;
+   align-items: center;
+     }
+
+     .menu{
+      display: none;
+
+     }
+     /* ARTICULOS */
+  .listado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .articulo {
+    width: 25%;
+  }
+  .contenedor-titular {
+    text-align: center;
+  }
+  .precio-descuento{
+   display: flex;
+   justify-content: space-between;
+  }
+
+/* para el footer en login y desktop */
+
+  .footer{
+    display: flex;
+    flex-direction:row;
+  }
+
+footer.footer-login{
+  display:flex;
+}
+  
+
+/* NOMBRE DEL ARTICULO */
+
+.articulo{
+  position:relative;
+}
+  .descripcion{
+    background-color:rgba(0, 0, 0,0.5);
+    color:white;
+    opacity:0;/* -------------se oculta con opacity 0 */
+    transition:opacity 450ms; /* para luego cambiar la opacity y que se vea */
+  }
+
+  .articulo:hover .descripcion{
+    opacity:1;/* -------al agregarle valor se vera-------- */   
+}
+
+/* CAMION moverse 90º en dektop */ 
+.camion {                       /* camion: aplico propiedades al elemento que guarda el icono */
+  display:flex;  
+  justify-content: flex-end;            
+  color: green;
+  border-bottom: 1px solid green;
+
+} 
+.fa-truck{                 /*camion: le aplico el borde al icono con la 3ra parte del nombre */
+  border-radius: 50%;
+  border:1px solid;
+  padding:5px;
+   animation: none;
+ 
+}
+.articulo:hover .fa-truck{
+  animation:rotar 1s infinite; 
+}
+
+@keyframes rotar {
+  0%{
+    transform:none;
+  }
+ 100% {
+  transform:rotate(-90deg);
+ } 
+}
+}
